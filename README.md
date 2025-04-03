@@ -34,7 +34,7 @@ The model is trained using the **Binary Cross Entropy (BCE) Loss with Logits** a
 - **Dataset split**: 80% training, 20% validation.
 - **Batch size**: 16
 - **Learning rate**: 4e-4
-- **Epochs**: 30
+- **Epochs**: 20
 
 The training and validation loss curves are shown below:
 

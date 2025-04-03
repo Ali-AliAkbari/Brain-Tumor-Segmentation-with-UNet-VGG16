@@ -22,7 +22,7 @@ The dataset used for this project is the **LGG Segmentation Dataset**, available
 
 A sample of the dataset is visualized below:
 
-![Dataset Sample](sample_dataset.png)
+![Dataset Sample](/Images/dataset.png)
 
 ## 🏗️ Model Architecture
 The implemented model is based on the UNet architecture with a **VGG16** feature extractor. The core components are:
@@ -43,12 +43,12 @@ The model is trained using the **Binary Cross Entropy (BCE) Loss with Logits** a
 
 The training and validation loss curves are shown below:
 
-![Loss Curve](loss_plot.png)
+![Loss Curve](/Images/plot.png)
 
 ## 🎯 Results
 After training, the model's performance is evaluated by comparing predicted masks with ground truth masks. Below are some sample predictions:
 
-![Sample Predictions](sample_predictions.png)
+![Sample Predictions](/Images/pred.png)
 
 ## 📜 License
 This project is licensed under the **GNU Affero General Public License v3.0**.

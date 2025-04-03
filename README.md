@@ -19,14 +19,16 @@ A sample of the dataset is visualized below:
 
 ![Dataset Sample](/Images/dataset.png)
 
-## 🏗️ Model Architecture
-The implemented model is based on the UNet architecture with a **VGG16** feature extractor. The core components are:
+## 🏗️ Model Architecture  
 
-- **VGG16 Backbone**: Extracts hierarchical spatial features from input images.
-- **Double Convolution Blocks**: Applied at each level of the encoder and decoder to refine feature representations.
-- **Upsampling Layers**: Restore the spatial resolution of the segmented regions.
-- **Skip Connections**: Enable detailed features from the encoder to be preserved in the decoder.
-- **Final Convolution Layer**: Produces the segmentation mask as the output.
+The proposed model is based on the UNet architecture, integrating **VGG16** as a feature extractor to enhance segmentation performance. The key components of the architecture are:  
+
+- **VGG16 Backbone with Transfer Learning**: The encoder utilizes a pre-trained **VGG16** network to extract hierarchical spatial features, significantly reducing training time while improving feature representation. The pre-trained weights enable the model to leverage rich feature hierarchies learned from large-scale datasets, thus accelerating convergence and enhancing generalization.  
+- **Double Convolution Blocks**: Each stage in both the encoder and decoder employs two consecutive convolutional layers followed by batch normalization and ReLU activation to refine feature maps effectively.  
+- **Upsampling and Skip Connections**: High-resolution spatial information is preserved through skip connections between corresponding encoder and decoder layers, aiding in precise localization of tumor regions.  
+- **Final Convolution Layer**: A 1×1 convolution is applied at the output to generate the segmentation mask, predicting pixel-wise tumor probabilities.  
+
+By incorporating transfer learning within the VGG16 backbone, the model not only achieves superior performance but also exhibits significantly reduced training time compared to conventional UNet architectures trained from scratch.
 
 ## 📚 Training Process
 The model is trained using the **Binary Cross Entropy (BCE) Loss with Logits** and optimized using **Adam**. Training details:

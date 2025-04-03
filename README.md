@@ -56,8 +56,8 @@ This project is licensed under the **GNU Affero General Public License v3.0**.
 ## 📬 Get in Touch
 For any inquiries or collaborations, feel free to contact me!
 
-- 📧 Email: [ali0aliakbari0@gmail.com]
-- 🔗 LinkedIn: [http://linkedin.com/in/ali-aliakbari-602227167]
+- 📧 [ali0aliakbari0@gmail.com](mailto:ali0aliakbari0@gmail.com)
+- 🔗 [LinkedIn](http://linkedin.com/in/ali-aliakbari-602227167)  
 
 Let's connect and discuss more! 🚀
 

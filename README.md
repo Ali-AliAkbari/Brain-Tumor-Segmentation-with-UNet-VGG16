@@ -1,12 +1,7 @@
 # 🧠 Brain Tumor Segmentation with UNet-VGG16
 
-## 📌 Introduction
-This repository presents an implementation of a brain tumor segmentation model using a UNet architecture with a VGG16 backbone for feature extraction. The approach is inspired by the paper:
-
-**"UNet-VGG16 with transfer learning for MRI-based brain tumor segmentation"**
-by Anindya Apriliyanti Pravitasari et al.
-
-The model is designed to segment MRI brain scans, identifying tumor regions with high accuracy.
+## 📌 Introduction  
+Brain tumor segmentation in magnetic resonance imaging (MRI) plays a crucial role in medical diagnostics and treatment planning. However, accurate and automated segmentation remains a challenging task due to the complex nature of tumor morphology and variations in imaging conditions. This repository presents an implementation of a deep learning-based segmentation model, leveraging the UNet architecture with a VGG16 encoder for feature extraction. The model benefits from transfer learning, utilizing the pre-trained VGG16 network to enhance feature representation while maintaining the spatial resolution necessary for precise segmentation. Inspired by the study *"UNet-VGG16 with transfer learning for MRI-based brain tumor segmentation"* by Anindya Apriliyanti Pravitasari et al., this implementation aims to achieve high accuracy in delineating tumor regions from MRI scans. The model is trained on the LGG Segmentation Dataset and optimized using Binary Cross Entropy loss with Adam optimization. This work contributes to advancing automated medical image segmentation, potentially aiding clinicians in faster and more reliable tumor diagnosis.  
 
 ## 📂 Dataset
 The dataset used for this project is the **LGG Segmentation Dataset**, available on Kaggle. It contains MRI scans along with their corresponding tumor masks. The dataset structure is as follows:
